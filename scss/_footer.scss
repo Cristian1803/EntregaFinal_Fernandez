@@ -1,0 +1,19 @@
+  footer {
+   @extend %piedepagina;
+   @media(max-width:500px){
+    grid-template-columns: 50px 50px 50px;
+   }
+
+ }
+
+ .texto-footer{
+  margin: 0px;
+  color:black;
+  font-size: 14px;
+  padding-top: 5px;
+  text-decoration:underline;
+
+  @media(max-width:500px){
+    display: none;
+  }
+ }
