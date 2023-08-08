@@ -108,7 +108,8 @@ ul li a:hover {
 
 .titulo-secundario {
   text-align: center;
-  padding: 15px;
+  padding: 10px;
+  margin: 0px;
 }
 
 .titulo-terceario {
@@ -137,6 +138,8 @@ ul li a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas: "parrafo-1  imagen-1" "imagen-2  parrafo-2" "parrafo-3  imagen-3";
@@ -153,10 +156,12 @@ ul li a:hover {
     flex-direction: column;
   }
 }
+.cuadros-texto p {
+  margin: 0px;
+}
 
 .parrafo-1 {
   grid-area: parrafo-1;
-  padding: 30px;
 }
 
 .imagen-1 {
@@ -165,7 +170,6 @@ ul li a:hover {
 
 .parrafo-2 {
   grid-area: parrafo-2;
-  padding: 20px;
 }
 
 .imagen-2 {
@@ -174,7 +178,6 @@ ul li a:hover {
 
 .parrafo-3 {
   grid-area: parrafo-3;
-  padding-top: 20px;
 }
 
 .imagen-3 {
@@ -287,7 +290,7 @@ ul li a:hover {
     object-fit: cover;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .carousel-item {
     width: 100%;
     height: 150px;
@@ -300,6 +303,7 @@ ul li a:hover {
   grid-template-columns: 768px;
   justify-content: center;
   text-align: center;
+  margin: 10px;
   color: black;
   font-size: 16px;
 }

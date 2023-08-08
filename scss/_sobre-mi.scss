@@ -3,6 +3,7 @@
     grid-template-columns: 768px;
     justify-content:center;
     text-align: center;
+    margin: 10px;
     @include pcentrado(black,16px);
 
     @media(max-width:800px){
